@@ -1,0 +1,332 @@
+* {
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+*::selection {
+    background-color: #23252b;
+    color: #f47521;
+}
+
+body {
+    background-color: #f57521;
+    padding: 0;
+    margin: 0;
+}
+
+.page_title {
+    color: black;
+    font-size: 100px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    width: 1180px;
+    margin: auto;
+    justify-content: center;
+}
+
+.subs {
+    height: 100px;
+    width: 385px;
+    background-color: #00000b;
+    padding: 35px;
+    margin: 0;
+
+}
+
+.fan {
+    position: relative;
+    top: 30px;
+    height: 550px;
+}
+
+.mega_fan {
+    margin: 0 10.5px;
+    position: relative;
+    height: 700px;
+}
+
+.super_fan {
+    position: relative;
+    top: 30px;
+    height: 765px;
+}
+
+/* ----Clases Generales----- */
+
+.h2 {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 12px;
+}
+
+.tax {
+    color: #a0a0a0;
+    font-size: 9px;
+    margin-top: 10px;
+}
+
+.free_try_button {
+    color: #fab818;
+    border: 2px solid #fab818;
+    padding: 0 15px;
+    font-size: 15px;
+    user-select: none;
+}
+
+.free_try_button:hover {
+    cursor: pointer;
+}
+
+.yellow_free_try_button {
+    background-color: #fab818;
+    color: #000;
+}
+
+.yellow_free_try_button:hover {
+    background-color: #ffc847;
+    color: #37393f;
+    transition: 0.4s;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.ademas_container {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    text-align: center;
+    margin: 0 15px;
+    font-size: 13px;
+    color: #dadada;
+    letter-spacing: 1px;
+}
+
+.line {
+    display: flex;
+    height: 2.5px;
+    flex-grow: 1;
+    background-color: #4f5053;
+}
+
+.subscription_ul {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.subscription_li {
+    list-style-type: none;
+    color: #bcbdc0;
+    margin-top: 14px;
+}
+
+i {
+    margin-top: 17px;
+    font-size: 14px;
+    margin-right: 7px;
+    color: #fab818;
+}
+
+#nav-bar {
+    display: flex;
+    min-width: 660px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5% 0 5%;
+    background-color: #00000b;
+    border-radius: 4px;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+}
+
+.nav_h1 {
+    font-size: 45px;
+}
+
+.nav_li {
+    display: inline;
+    padding: 0px 20px;
+}
+
+.nav_ul {
+    margin: 40px;
+}
+
+#header-img {
+    height: 200px;
+}
+
+.nav-link {
+    text-decoration: none;
+    letter-spacing: 1.5px;
+}
+
+.form-container {
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    background-color: #00000b;
+    height: 450px;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    max-width: 1180px;
+    width: 88%;
+    padding-right: 40px;
+}
+
+iframe {
+    align-items: center;
+    height: 338px;
+    border-radius: 10px;
+    width: 600px;
+    margin-left: 55px;
+    margin-right: 25px;
+}
+
+.h3-email-box {
+    position: relative;
+    color: #fab818;
+    font-size: 35px;
+    position: relative;
+    top: -50px;
+    right: -15;
+    letter-spacing: 2px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+form {
+    display: flex;
+    display: inline;
+    margin-top: 400px;
+}
+
+.email-box {
+    margin: auto;
+    width: 400px;
+}
+
+#email {
+    width: 380px;
+    height: 50px;
+    background-color: #232333;
+    font-size: 19px;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    bottom: 50px;
+    left: -12px;
+}
+
+#submit {
+    position: relative;
+    top: 62px;
+    /* left: 240px; */
+    left: 260px;
+    background-color: #f3b007;
+    color: #08080c;
+    border: none;
+    border-radius: 2px;
+    display: block;
+    height: 45px;
+    width: 140px;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #fcc034;
+    color: #242526;
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 0px 10px 8px #f36c12;
+        width: auto;
+    }
+
+    .subs {
+        margin: auto;
+    }
+
+    .fan {
+        top: 0;
+        margin-top: 10px;
+    }
+
+    .mega_fan {
+        margin-top: 11px;
+        margin-bottom: 11px;
+    }
+
+    .super_fan {
+        top: 0;
+
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .form-container {
+        flex-direction: column;
+        height: 650px;
+        padding-bottom: 100px;
+        padding-top: 20px;
+        padding-right: 0;
+    }
+
+    iframe {
+        /* height: 500px; */
+        height: 51%;
+        width: 91%;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .h3-email-box {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    #email {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    #submit {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
